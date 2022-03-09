@@ -1,0 +1,27 @@
+<%- include('includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="stylesheet" href="/css/member.css">
+</head>
+
+<body>
+   <%- include('includes/navigation.ejs') %>
+
+    <main>
+        <form class="member-form" action="/add-member" method="POST">
+            <div class="form-control">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title">
+
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+
+                <label for="mess">message</label>
+                <input type="text" name="mess" id="mess">
+
+
+            </div>
+
+            <button class="btn" type="submit">Add Member</button>
+        </form>
+    </main>
+<%- include('includes/end.ejs') %></main>
